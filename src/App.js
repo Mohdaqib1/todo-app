@@ -1,7 +1,6 @@
 import './App.css';
-import logo1 from './download.jfif';
-import logo2 from './edit.png';
-
+import FirstComponents from './Components/FirstComponents';
+import SecondComponents from './Components/SecondComponents';
 
 import React from "react";
 import {
@@ -39,14 +38,14 @@ export default function App() {
 
 
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+        
         <Switch>
-          <Route path="/secondcomponents" component>
-            <About />
+          <Route path="/SecondComponents" component>
+          <SecondComponents />
+          
           </Route>
-          <Route path="/ThirdComponents">
-            <Users />
+          <Route path="/FirstComponents" component>
+            <FirstComponents/>
           </Route>
           <Route path="/">
             <Home />
@@ -69,12 +68,12 @@ function Home() {
          <h2 >
              Add Item
          </h2><p/>
-         <Link to="/secondcomponents" ><button className="bu">click</button>   <p/></Link>
+         <Link to="/FirstComponents" ><button className="bu">click</button>   <p/></Link>
            
         <h2>
              Show Data
          </h2><p/>
-         <Link to="/ThirdComponents" ><button className="bu">click</button>   <p/></Link>
+         <Link to="/SecondComponents" ><button className="bu">click</button>   <p/></Link>
         
     </div>
     </div>
@@ -85,7 +84,7 @@ function Home() {
 
 
 
-
+/*
 
 function About() {
   return <div>
@@ -144,4 +143,4 @@ function Users() {
          </div>      
 </div>
 </div>;
-}
+}*/
