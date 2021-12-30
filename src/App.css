@@ -1,7 +1,11 @@
-.Head{
-  background-color: rgb(12, 158, 78);
+*{
   margin: 0px;
- }
+}
+header{
+  
+  background-color: rgb(12, 158, 78);
+
+}
  .Head1{
   background-color: rgb(12, 158, 78);
   padding-left: 24px;
@@ -9,6 +13,20 @@
    padding-bottom: 12px;
    padding-top: 12px;
    text-align: center;
+ }
+ .frm{
+   text-align: center;
+   margin-top: 30px;
+ }
+ .input{
+   padding-top: 10px;
+   padding-bottom: 10px;
+ 
+   box-sizing: border-box;
+   border: none;
+   border-bottom: 2px solid rgb(12, 158, 78);
+   cursor: inherit;
+   border-radius: 15px;
  }
  .l1{
    color: black;
@@ -20,8 +38,8 @@
 
  .he{
    padding: 45px;
-   color: black;
-   border-radius: 30px;
+   color: white;
+   
  }
  .he1{
   text-align: end;
@@ -112,7 +130,8 @@
   cursor: pointer;
 }
 tr{
-  background-color: rgb(228, 205, 146);
+ 
+  padding: 20px;
 }
 .t1{
    margin: auto;
@@ -183,4 +202,8 @@ tr{
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+.completed{
+  text-decoration: line-through;
+opacity: 0.5;
 }
